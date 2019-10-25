@@ -31,7 +31,7 @@ for (i = 2:length(x))
     BTSdeathRate = BTSdeathConstant * BTSpop(i-1) * WTSpop(i-1)
 
     % Increase or decrease the population of each type of shark based on
-    %   the birth and death rates for this time step.
+    %  the birth and death rates for this time step.
     WTSpop(i) = WTSpop(i-1) + (WTSbirthRate - WTSdeathRate) * deltaX
     BTSpop(i) = BTSpop(i-1) + (BTSbirthRate - BTSdeathRate) * deltaX
 end
