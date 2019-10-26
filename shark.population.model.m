@@ -34,10 +34,10 @@ for (i = 2:length(x))
     % the birth and death rates for this time step.
     WTSpop(i) = WTSpop(i-1) + (WTSbirthRate - WTSdeathRate) * deltaX
     BTSpop(i) = BTSpop(i-1) + (BTSbirthRate - BTSdeathRate) * deltaX
+    
 end
 
 plot(x,WTSpop,x,BTSpop)
-
 
 xlabel('Time')
 ylabel('Population Size')
