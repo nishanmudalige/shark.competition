@@ -1,5 +1,5 @@
 % Set up our time increment and our vector (array) of x (time) values
-deltaX = .1   % month
+deltaX = 0.1   % month
 %x = seq(0,5,deltaX)
 x = 0:deltaX:6;
 
