@@ -37,6 +37,7 @@ for (i = 2:length(x))
     
 end
 
+% Plot shark populations over time
 plot(x,WTSpop,x,BTSpop)
 
 xlabel('Time')
