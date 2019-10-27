@@ -27,6 +27,7 @@ for (i = 2:length(x))
     WTSbirthRate = WTSbirthFraction * WTSpop(i-1)
     BTSbirthRate = BTSbirthFraction * BTSpop(i-1)
     
+    % Compute births/month and deaths/month for each type of shark.
     WTSdeathRate = WTSdeath`tant * WTSpop(i-1) * BTSpop(i-1)
     BTSdeathRate = BTSdeathConstant * BTSpop(i-1) * WTSpop(i-1)
 
