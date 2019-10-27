@@ -23,7 +23,7 @@ WTSpop(1) = initWTSpop
 % set up the simulation's initial conditions at i=1.
 for (i = 2:length(x))
 
-    % Compute births/month and deaths/month for each type of shark.
+    % Compute births/month for each type of shark.
     WTSbirthRate = WTSbirthFraction * WTSpop(i-1)
     BTSbirthRate = BTSbirthFraction * BTSpop(i-1)
     
